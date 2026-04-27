@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=/us/">
+  <script>
+    // Detect language and redirect
+    const lang = navigator.language || navigator.userLanguage;
+    const langMap = {'de': '/de/', 'pl': '/pl/', 'pt': '/pt/', 'fr': '/fr/'};
+    const prefix = lang.substring(0,2).toLowerCase();
+    if (langMap[prefix]) window.location.href = langMap[prefix];
+    else window.location.href = '/us/';
+  </script>
+  <title>YOURBIOHACKER - Redirecting...</title>
+</head>
+<body><p>Redirecting...</p></body>
+</html>
