@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YOURBIOHACKER | LifeWave Blog — USA</title>
-<meta name="description" content="Expert LifeWave photobiomodulation articles for wellness, performance and longevity. YOURBIOHACKER affiliate blog.">
-<link rel="alternate" hreflang="en" href="https://orinaturapt-jpg.github.io/yourbiohacker-blog/us/">
-<link rel="alternate" hreflang="de" href="https://orinaturapt-jpg.github.io/yourbiohacker-blog/de/">
-<link rel="alternate" hreflang="pl" href="https://orinaturapt-jpg.github.io/yourbiohacker-blog/pl/">
-<link rel="alternate" hreflang="pt" href="https://orinaturapt-jpg.github.io/yourbiohacker-blog/pt/">
-<link rel="alternate" hreflang="fr" href="https://orinaturapt-jpg.github.io/yourbiohacker-blog/fr/">
+<title>LifeWave Blog | YOURBIOHACKER</title>
+<meta name="description" content="Science-backed articles on LifeWave patches, photobiomodulation, and biohacking for wellness.">
+<meta name="keywords" content="LifeWave, photobiomodulation, patches, wellness, anti-aging, biohacking">
 <style>
 :root { --primary: #00d4aa; --dark: #0a0a0a; --card: #141414; --text: #e0e0e0; --muted: #888; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: var(--text); line-height: 1.7; }
+body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--dark); color: var(--text); line-height: 1.7; }
 nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; background: #111; border-bottom: 1px solid #222; flex-wrap: wrap; gap: 0.5rem; }
 .nav-brand a { font-size: 1.2rem; font-weight: 700; color: var(--primary); text-decoration: none; }
-.nav-links a { color: var(--text); text-decoration: none; margin-left: 1.5rem; }
+.nav-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.nav-links a { color: var(--text); text-decoration: none; }
 .nav-links a:hover { color: var(--primary); }
-.nav-cta { background: var(--primary); color: #000 !important; padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; }
+.nav-cta { background: var(--primary); color: #000 !important; padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; text-decoration: none; }
 .lang-switcher { display: flex; gap: 0.3rem; flex-wrap: wrap; }
 .lang-btn { padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.8rem; color: var(--muted); text-decoration: none; background: #1a1a1a; }
 .lang-btn.active, .lang-btn:hover { background: var(--primary); color: #000; }
 .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #0a0a0a 0%, #0d2018 50%, #0a0a0a 100%); border-bottom: 1px solid #222; }
 .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; }
 .hero p { font-size: 1.1rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
-.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-.btn-primary { background: var(--primary); color: #000; padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 700; }
-.btn-secondary { border: 1px solid var(--primary); color: var(--primary); padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; }
 .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
 .section-title { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 2rem; text-align: center; }
 .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
@@ -39,107 +33,84 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .article-card h2 a:hover { color: var(--primary); }
 .article-card p { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
 .read-more { color: var(--primary); text-decoration: none; font-size: 0.85rem; font-weight: 600; }
-.cta-banner { background: linear-gradient(135deg, #0d2018, #0a1a10); border: 1px solid var(--primary); border-radius: 12px; padding: 2rem; text-align: center; margin: 3rem 0; }
-.cta-banner h3 { color: var(--primary); margin-bottom: 0.75rem; font-size: 1.3rem; }
-.cta-banner p { color: var(--muted); margin-bottom: 1.5rem; }
-article.content { max-width: 800px; margin: 0 auto; padding: 2rem; }
-article.content h1 { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; }
-article.content h2 { font-size: 1.4rem; color: var(--primary); margin: 2rem 0 1rem; }
-article.content h3 { font-size: 1.15rem; color: #ccc; margin: 1.5rem 0 0.75rem; }
-article.content p { margin-bottom: 1rem; }
-article.content ul, article.content ol { margin: 1rem 0 1rem 2rem; }
-article.content li { margin-bottom: 0.5rem; }
-article.content strong { color: var(--primary); }
-article.content a { color: var(--primary); }
-article.content hr { border-color: #222; margin: 2rem 0; }
-article.content blockquote { border-left: 3px solid var(--primary); padding-left: 1rem; margin: 1.5rem 0; color: var(--muted); font-style: italic; }
 footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid #222; margin-top: 3rem; }
-footer a { color: var(--primary); }
+footer a { color: var(--primary); text-decoration: none; }
 @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } nav { flex-direction: column; } }
 </style>
 </head>
 <body>
 <nav>
-  <div class="nav-brand"><a href="../../us/">YOURBIOHACKER</a></div>
-  <div class="lang-switcher"><a href="../../us/" class="lang-btn active">🇺🇸 EN</a><a href="../../de/" class="lang-btn ">🇩🇪 DE</a><a href="../../pl/" class="lang-btn ">🇵🇱 PL</a><a href="../../pt/" class="lang-btn ">🇵🇹 PT</a><a href="../../fr/" class="lang-btn ">🇫🇷 FR</a></div>
-  <div class="nav-links">
-    <a href="https://lifewave.com/YOURBIOHACKER" target="_blank" class="nav-cta">Shop LifeWave</a>
+  <div class="nav-brand"><a href="/yourbiohacker-blog/">YOURBIOHACKER</a></div>
+  <div class="nav-links" style="flex: 1;">
+    <a href="/yourbiohacker-blog/us/">Blog</a>
+    <a href="https://lifewave.com/YOURBIOHACKER" class="nav-cta">Shop LifeWave</a>
+  </div>
+  <div class="lang-switcher">
+    <a href="/yourbiohacker-blog/us/" class="lang-btn active">US</a>
+    <a href="/yourbiohacker-blog/de/" class="lang-btn">DE</a>
+    <a href="/yourbiohacker-blog/pt/" class="lang-btn">PT</a>
+    <a href="/yourbiohacker-blog/pl/" class="lang-btn">PL</a>
+    <a href="/yourbiohacker-blog/fr/" class="lang-btn">FR</a>
+    
   </div>
 </nav>
+
 <div class="hero">
-  <h1>Your BioHacker LifeWave Blog</h1>
-  <p>Science-backed photobiomodulation wellness for peak performance and longevity.</p>
-  <div class="hero-btns">
-    <a href="https://lifewave.com/YOURBIOHACKER" target="_blank" class="btn-primary">Shop LifeWave Patches</a>
-  </div>
+  <h1>YOURBIOHACKER LifeWave Blog</h1>
+  <p>Science-backed insights on photobiomodulation, LifeWave patches, and biohacking for optimal wellness.</p>
 </div>
+
 <div class="container">
-  <h2 class="section-title">Latest Articles</h2>
+  <h2 class="section-title">Featured Articles</h2>
   <div class="articles-grid">
-    
     <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="lifewave-sp6-complete-patch-appetite-weight-management/">LifeWave SP6 Complete Patch: Appetite Control & Weight Management</a></h2>
-      <p>Managing weight and controlling cravings is one of the most common wellness challenges Americans face today. The LifeWave SP6 Complete patch offers a non-invasive, drug-free approa...</p>
-      <a href="lifewave-sp6-complete-patch-appetite-weight-management/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="lifewave-patches-athletes-performance/">LifeWave Patches for Athletes: Boost Performance Naturally</a></h2>
-      <p>Are you an athlete looking for a drug-free, non-invasive edge? LifeWave patches are designed to work with your body's natural energy systems to help support recovery, endurance, an...</p>
-      <a href="lifewave-patches-athletes-performance/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="x39-patch-skin-rejuvenation-youthful-radiance/">X39 Patch Skin Rejuvenation: Unlock Youthful Radiance</a></h2>
-      <p>Are you searching for a natural way to restore your skin's youthful glow? The LifeWave X39 patch is designed to support your body's own regenerative processes, and many users repor...</p>
-      <a href="x39-patch-skin-rejuvenation-youthful-radiance/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="silent-nights-patch-natural-sleep-support/">Silent Nights Patch: Natural Sleep Support That Works</a></h2>
-      <p>Are you struggling with restless nights and waking up feeling drained? Quality sleep is the foundation of good health, yet millions of people worldwide find it difficult to get the...</p>
-      <a href="silent-nights-patch-natural-sleep-support/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="lifewave-glutathione-patch-detox-antioxidant/">LifeWave Glutathione Patch: Detox & Antioxidant Support</a></h2>
-      <p>If you're on a wellness journey and looking to support your body's natural detoxification and antioxidant defenses, the LifeWave Glutathione patch may be exactly what you've been s...</p>
-      <a href="lifewave-glutathione-patch-detox-antioxidant/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="energy-enhancer-patch-athletic-performance/">Energy Enhancer Patch: Boost Athletic Performance Naturally</a></h2>
-      <p>Looking for a clean, stimulant-free way to maximize your workouts, push your endurance limits, and recover faster? The LifeWave Energy Enhancer patch is engineered for active Ameri...</p>
-      <a href="energy-enhancer-patch-athletic-performance/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="aeon-patch-stress-longevity/">Aeon Patch: Your Natural Shield Against Stress & Aging</a></h2>
-      <p>Chronic stress is one of the biggest silent killers of modern life. It accelerates cellular aging, disrupts hormonal balance, suppresses immunity, and drains your vitality. While l...</p>
-      <a href="aeon-patch-stress-longevity/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
-      <h2><a href="icewave-patch-natural-pain-relief-lifewave/">IceWave Patch: Natural Pain Relief With LifeWave Technology</a></h2>
-      <p>Chronic and acute pain affects millions of Americans, limiting daily function and quality of life. Conventional pain management often relies on pharmaceuticals that carry significa...</p>
-      <a href="icewave-patch-natural-pain-relief-lifewave/" class="read-more">Read More →</a>
-    </div>
-    <div class="article-card">
-      <div class="card-tag">LifeWave</div>
+      <div class="card-tag">Anti-Aging</div>
       <h2><a href="ghk-cu-copper-peptide-anti-aging-lifewave/">GHK-Cu Copper Peptide: LifeWave Anti-Aging Breakthrough</a></h2>
-      <p>GHK-Cu (copper peptide) is one of the most researched anti-aging molecules in modern science. Naturally present in human plasma, saliva, and urine, GHK-Cu levels decline significan...</p>
-      <a href="ghk-cu-copper-peptide-anti-aging-lifewave/" class="read-more">Read More →</a>
+      <p>Discover science-backed insights on LifeWave technology and photobiomodulation.</p>
+      <a href="ghk-cu-copper-peptide-anti-aging-lifewave/" class="read-more">Read Article →</a>
     </div>
-  </div>
-  <div class="cta-banner">
-    <h3>Ready to Start Your LifeWave Journey?</h3>
-    <p>Explore the full range of photobiomodulation patches.</p>
-    <a href="https://lifewave.com/YOURBIOHACKER" target="_blank" class="btn-primary">Shop LifeWave Patches</a>
+
+    <div class="article-card">
+      <div class="card-tag">Pain Relief</div>
+      <h2><a href="icewave-patch-natural-pain-relief-lifewave/">IceWave Patch: Natural Pain Relief With LifeWave Technology</a></h2>
+      <p>Discover science-backed insights on LifeWave technology and photobiomodulation.</p>
+      <a href="icewave-patch-natural-pain-relief-lifewave/" class="read-more">Read Article →</a>
+    </div>
+
+    <div class="article-card">
+      <div class="card-tag">Stress & Longevity</div>
+      <h2><a href="aeon-patch-stress-longevity/">Aeon Patch: Your Natural Shield Against Stress & Aging</a></h2>
+      <p>Discover science-backed insights on LifeWave technology and photobiomodulation.</p>
+      <a href="aeon-patch-stress-longevity/" class="read-more">Read Article →</a>
+    </div>
+
+    <div class="article-card">
+      <div class="card-tag">Athletic Performance</div>
+      <h2><a href="energy-enhancer-patch-athletic-performance/">Energy Enhancer Patch: Boost Athletic Performance Naturally</a></h2>
+      <p>Discover science-backed insights on LifeWave technology and photobiomodulation.</p>
+      <a href="energy-enhancer-patch-athletic-performance/" class="read-more">Read Article →</a>
+    </div>
+
+    <div class="article-card">
+      <div class="card-tag">Detoxification</div>
+      <h2><a href="lifewave-glutathion-patch-detoxification-antioxidants/">LifeWave Glutathion Patch: Support Detoxification & Antioxidants</a></h2>
+      <p>Discover science-backed insights on LifeWave technology and photobiomodulation.</p>
+      <a href="lifewave-glutathion-patch-detoxification-antioxidants/" class="read-more">Read Article →</a>
+    </div>
+
+    <div class="article-card">
+      <div class="card-tag">Wound Healing</div>
+      <h2><a href="photobiomodulation-wound-healing-light-therapy/">Photobiomodulation for Wound Healing: How Light Therapy Supports Recovery</a></h2>
+      <p>Discover science-backed insights on LifeWave technology and photobiomodulation.</p>
+      <a href="photobiomodulation-wound-healing-light-therapy/" class="read-more">Read Article →</a>
+    </div>
+
   </div>
 </div>
+
 <footer>
-  <p>© 2026 YOURBIOHACKER | <a href="https://lifewave.com/YOURBIOHACKER" target="_blank">Shop LifeWave</a> | For informational purposes only. Not medical advice.</p>
+  <p>&copy; 2026 YOURBIOHACKER | Powered by LifeWave Science</p>
+  <p><a href="https://lifewave.com/YOURBIOHACKER">Visit LifeWave Official Store</a></p>
 </footer>
 </body>
 </html>
