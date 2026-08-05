@@ -31,7 +31,9 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
 .section-title { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 2rem; text-align: center; }
 .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
-.article-card { background: var(--card); border: 1px solid #222; border-radius: 12px; padding: 1.5rem; transition: border-color 0.2s; }
+.article-card { background: var(--card); border: 1px solid #222; border-radius: 12px; overflow: hidden; transition: border-color 0.2s; }
+.card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.card-body { padding: 1.5rem; }
 .article-card:hover { border-color: var(--primary); }
 .card-tag { font-size: 0.75rem; color: var(--primary); text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
 .article-card h2 { font-size: 1.1rem; margin-bottom: 0.75rem; }
@@ -77,106 +79,157 @@ footer a { color: var(--primary); }
   <p class="section-title">Articles Récents</p>
   <div class="articles-grid">
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/ghk-cu-peptide-cuivre-anti-age-lifewave/">Peptide de Cuivre GHK-Cu: La Révolution Anti-Âge LifeWave</a></h2>
-  <p>Découvrez comment le peptide de cuivre GHK-Cu soutient l'anti-âge.</p>
-  <a href="/yourbiohacker-blog/fr/ghk-cu-peptide-cuivre-anti-age-lifewave/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/ghk-cu-copper-peptide-anti-aging-lifewave.png" alt="Peptide de Cuivre GHK-Cu: La Révolution Anti-Âge LifeWave" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/ghk-cu-peptide-cuivre-anti-age-lifewave/">Peptide de Cuivre GHK-Cu: La Révolution Anti-Âge LifeWave</a></h2>
+    <p>Découvrez comment le peptide de cuivre GHK-Cu soutient l'anti-âge.</p>
+    <a href="/yourbiohacker-blog/fr/ghk-cu-peptide-cuivre-anti-age-lifewave/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/icewave-patch-soulagement-naturel-douleur-lifewave/">Patch IceWave: Soulagement Naturel de la Douleur avec la Technologie LifeWave</a></h2>
-  <p>Découvrez comment les patchs LifeWave IceWave peuvent soutenir le soulagement naturel de la douleur.</p>
-  <a href="/yourbiohacker-blog/fr/icewave-patch-soulagement-naturel-douleur-lifewave/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/icewave-patch-natural-pain-relief-lifewave.png" alt="Patch IceWave: Soulagement Naturel de la Douleur avec la Technologie LifeWave" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/icewave-patch-soulagement-naturel-douleur-lifewave/">Patch IceWave: Soulagement Naturel de la Douleur avec la Technologie LifeWave</a></h2>
+    <p>Découvrez comment les patchs LifeWave IceWave peuvent soutenir le soulagement naturel de la douleur.</p>
+    <a href="/yourbiohacker-blog/fr/icewave-patch-soulagement-naturel-douleur-lifewave/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/aeon-patch-stress-longevite/">Patch Aeon : Votre Bouclier Naturel Contre le Stress et le Vieillissement</a></h2>
-  <p>Découvrez comment le patch LifeWave Aeon peut soutenir la réduction du stress.</p>
-  <a href="/yourbiohacker-blog/fr/aeon-patch-stress-longevite/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/aeon-patch-stress-longevity.png" alt="Patch Aeon : Votre Bouclier Naturel Contre le Stress et le Vieillissement" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/aeon-patch-stress-longevite/">Patch Aeon : Votre Bouclier Naturel Contre le Stress et le Vieillissement</a></h2>
+    <p>Découvrez comment le patch LifeWave Aeon peut soutenir la réduction du stress.</p>
+    <a href="/yourbiohacker-blog/fr/aeon-patch-stress-longevite/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/energy-enhancer-patch-performances-sportives/">Patch Energy Enhancer : Boostez Vos Performances Sportives Naturellement</a></h2>
-  <p>Découvrez comment les patches LifeWave Energy Enhancer peuvent améliorer les performances sportives.</p>
-  <a href="/yourbiohacker-blog/fr/energy-enhancer-patch-performances-sportives/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/energy-enhancer-patch-athletic-performance.png" alt="Patch Energy Enhancer : Boostez Vos Performances Sportives Naturellement" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/energy-enhancer-patch-performances-sportives/">Patch Energy Enhancer : Boostez Vos Performances Sportives Naturellement</a></h2>
+    <p>Découvrez comment les patches LifeWave Energy Enhancer peuvent améliorer les performances sportives.</p>
+    <a href="/yourbiohacker-blog/fr/energy-enhancer-patch-performances-sportives/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-patch-glutathion-detoxification-antioxydants/">Patch LifeWave Glutathion : Soutien à la Détoxification et aux Antioxydants</a></h2>
-  <p>Découvrez comment le patch LifeWave Glutathion peut soutenir la détox.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-patch-glutathion-detoxification-antioxydants/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-glutathione-patch-detox-antioxidant.png" alt="Patch LifeWave Glutathion : Soutien à la Détoxification et aux Antioxydants" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-patch-glutathion-detoxification-antioxydants/">Patch LifeWave Glutathion : Soutien à la Détoxification et aux Antioxydants</a></h2>
+    <p>Découvrez comment le patch LifeWave Glutathion peut soutenir la détox.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-patch-glutathion-detoxification-antioxydants/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/patch-silent-nights-soutien-naturel-du-sommeil/">Patch Silent Nights : Soutien Naturel du Sommeil</a></h2>
-  <p>Découvrez comment les patchs LifeWave Silent Nights favorisent un sommeil naturel.</p>
-  <a href="/yourbiohacker-blog/fr/patch-silent-nights-soutien-naturel-du-sommeil/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/silent-nights-patch-natural-sleep-support.png" alt="Patch Silent Nights : Soutien Naturel du Sommeil" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/patch-silent-nights-soutien-naturel-du-sommeil/">Patch Silent Nights : Soutien Naturel du Sommeil</a></h2>
+    <p>Découvrez comment les patchs LifeWave Silent Nights favorisent un sommeil naturel.</p>
+    <a href="/yourbiohacker-blog/fr/patch-silent-nights-soutien-naturel-du-sommeil/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/patch-x39-rajeunissement-cutane-eclat-jeunesse/">Patch X39 Rajeunissement Cutané: Éclat de Jeunesse</a></h2>
-  <p>Découvrez comment le patch LifeWave X39 peut soutenir le rajeunissement cutané.</p>
-  <a href="/yourbiohacker-blog/fr/patch-x39-rajeunissement-cutane-eclat-jeunesse/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/x39-patch-skin-rejuvenation-youthful-radiance.png" alt="Patch X39 Rajeunissement Cutané: Éclat de Jeunesse" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/patch-x39-rajeunissement-cutane-eclat-jeunesse/">Patch X39 Rajeunissement Cutané: Éclat de Jeunesse</a></h2>
+    <p>Découvrez comment le patch LifeWave X39 peut soutenir le rajeunissement cutané.</p>
+    <a href="/yourbiohacker-blog/fr/patch-x39-rajeunissement-cutane-eclat-jeunesse/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-patchs-sportifs-performances/">Patchs LifeWave pour les Sportifs: Boostez vos Performances Naturellement</a></h2>
-  <p>Découvrez comment les patchs LifeWave soutiennent les performances sportives naturellement.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-patchs-sportifs-performances/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-patches-athletes-performance.png" alt="Patchs LifeWave pour les Sportifs: Boostez vos Performances Naturellement" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-patchs-sportifs-performances/">Patchs LifeWave pour les Sportifs: Boostez vos Performances Naturellement</a></h2>
+    <p>Découvrez comment les patchs LifeWave soutiennent les performances sportives naturellement.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-patchs-sportifs-performances/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-sp6-complete-patch-controle-appetit-gestion-poids/">Patch LifeWave SP6 Complete : Contrôle de l'Appétit &amp; Gestion du Poids</a></h2>
-  <p>Découvrez comment le patch LifeWave SP6 Complete peut soutenir le contrôle de l'appétit.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-sp6-complete-patch-controle-appetit-gestion-poids/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-sp6-complete-patch-appetite-weight-management.png" alt="Patch LifeWave SP6 Complete : Contrôle de l'Appétit &amp; Gestion du Poids" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-sp6-complete-patch-controle-appetit-gestion-poids/">Patch LifeWave SP6 Complete : Contrôle de l'Appétit &amp; Gestion du Poids</a></h2>
+    <p>Découvrez comment le patch LifeWave SP6 Complete peut soutenir le contrôle de l'appétit.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-sp6-complete-patch-controle-appetit-gestion-poids/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/photobiomodulation-cicatrisation-plaies-therapie-lumiere/">Photobiomodulation pour la Cicatrisation des Plaies</a></h2>
-  <p>Découvrez comment la photobiomodulation soutient la cicatrisation naturelle des plaies.</p>
-  <a href="/yourbiohacker-blog/fr/photobiomodulation-cicatrisation-plaies-therapie-lumiere/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/photobiomodulation-wound-healing-light-therapy.png" alt="Photobiomodulation pour la Cicatrisation des Plaies" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/photobiomodulation-cicatrisation-plaies-therapie-lumiere/">Photobiomodulation pour la Cicatrisation des Plaies</a></h2>
+    <p>Découvrez comment la photobiomodulation soutient la cicatrisation naturelle des plaies.</p>
+    <a href="/yourbiohacker-blog/fr/photobiomodulation-cicatrisation-plaies-therapie-lumiere/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/y-age-carnosine-patch-force-vitalite-longevite/">Patch Y-Age Carnosine : Force, Vitalité et Longévité</a></h2>
-  <p>Découvrez comment le patch LifeWave Y-Age Carnosine peut soutenir la force et la longévité.</p>
-  <a href="/yourbiohacker-blog/fr/y-age-carnosine-patch-force-vitalite-longevite/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/y-age-carnosine-patch-strength-vitality-longevity.png" alt="Patch Y-Age Carnosine : Force, Vitalité et Longévité" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/y-age-carnosine-patch-force-vitalite-longevite/">Patch Y-Age Carnosine : Force, Vitalité et Longévité</a></h2>
+    <p>Découvrez comment le patch LifeWave Y-Age Carnosine peut soutenir la force et la longévité.</p>
+    <a href="/yourbiohacker-blog/fr/y-age-carnosine-patch-force-vitalite-longevite/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/activation-cellules-souches-x39-lifewave/">Science de l'Activation des Cellules Souches : Comment X39 Régénère Votre Corps</a></h2>
-  <p>Découvrez la science de l'activation des cellules souches et comment X39 soutient le renouvellement cellulaire.</p>
-  <a href="/yourbiohacker-blog/fr/activation-cellules-souches-x39-lifewave/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/stem-cell-activation-science-x39-lifewave.png" alt="Science de l'Activation des Cellules Souches : Comment X39 Régénère Votre Corps" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/activation-cellules-souches-x39-lifewave/">Science de l'Activation des Cellules Souches : Comment X39 Régénère Votre Corps</a></h2>
+    <p>Découvrez la science de l'activation des cellules souches et comment X39 soutient le renouvellement cellulaire.</p>
+    <a href="/yourbiohacker-blog/fr/activation-cellules-souches-x39-lifewave/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-x49-patch-force-endurance-recuperation-musculaire/">Patch LifeWave X49 : Force, Endurance &amp; Récupération Musculaire</a></h2>
-  <p>Découvrez comment le patch LifeWave X49 peut soutenir force et récupération musculaire.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-x49-patch-force-endurance-recuperation-musculaire/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-x49-patch-strength-stamina-muscle-recovery.png" alt="Patch LifeWave X49 : Force, Endurance &amp; Récupération Musculaire" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-x49-patch-force-endurance-recuperation-musculaire/">Patch LifeWave X49 : Force, Endurance &amp; Récupération Musculaire</a></h2>
+    <p>Découvrez comment le patch LifeWave X49 peut soutenir force et récupération musculaire.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-x49-patch-force-endurance-recuperation-musculaire/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-alavida-patch-anti-age-epithalamin/">Patch LifeWave Alavida : Anti-Âge avec le Peptide Epithalamin</a></h2>
-  <p>Découvrez comment le patch LifeWave Alavida utilise le peptide Epithalamin pour l'anti-âge.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-alavida-patch-anti-age-epithalamin/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-alavida-patch-anti-aging-epithalamin.png" alt="Patch LifeWave Alavida : Anti-Âge avec le Peptide Epithalamin" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-alavida-patch-anti-age-epithalamin/">Patch LifeWave Alavida : Anti-Âge avec le Peptide Epithalamin</a></h2>
+    <p>Découvrez comment le patch LifeWave Alavida utilise le peptide Epithalamin pour l'anti-âge.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-alavida-patch-anti-age-epithalamin/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-nirvana-patch-humeur-beta-endorphine/">Patch LifeWave Nirvana : Boostez Votre Humeur Naturellement par Photobiomodulation</a></h2>
-  <p>Découvrez comment le patch LifeWave Nirvana stimule les bêta-endorphines naturellement.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-nirvana-patch-humeur-beta-endorphine/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-nirvana-patch-mood-boost-beta-endorphin.png" alt="Patch LifeWave Nirvana : Boostez Votre Humeur Naturellement par Photobiomodulation" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-nirvana-patch-humeur-beta-endorphine/">Patch LifeWave Nirvana : Boostez Votre Humeur Naturellement par Photobiomodulation</a></h2>
+    <p>Découvrez comment le patch LifeWave Nirvana stimule les bêta-endorphines naturellement.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-nirvana-patch-humeur-beta-endorphine/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-protocole-combinaison-patches/">LifeWave Stacking de Patches : Maximisez vos Résultats Anti-Âge</a></h2>
-  <p>Découvrez comment combiner les patches LifeWave pour des résultats anti-âge amplifiés.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-protocole-combinaison-patches/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-patch-stacking-protocol.png" alt="LifeWave Stacking de Patches : Maximisez vos Résultats Anti-Âge" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-protocole-combinaison-patches/">LifeWave Stacking de Patches : Maximisez vos Résultats Anti-Âge</a></h2>
+    <p>Découvrez comment combiner les patches LifeWave pour des résultats anti-âge amplifiés.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-protocole-combinaison-patches/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 <div class="article-card">
-  <div class="card-tag">LifeWave</div>
-  <h2><a href="/yourbiohacker-blog/fr/lifewave-patches-sante-articulaire-inflammation/">Patches LifeWave pour la Santé Articulaire et le Soulagement de l'Inflammation</a></h2>
-  <p>Découvrez comment les patches LifeWave IceWave et X39 peuvent soutenir la santé articulaire.</p>
-  <a href="/yourbiohacker-blog/fr/lifewave-patches-sante-articulaire-inflammation/" class="read-more">Lire la suite →</a>
+  <img src="/yourbiohacker-blog/images/preview/lifewave-patches-joint-health-inflammation.png" alt="Patches LifeWave pour la Santé Articulaire et le Soulagement de l'Inflammation" class="card-img" loading="lazy" />
+  <div class="card-body">
+    <div class="card-tag">LifeWave</div>
+    <h2><a href="/yourbiohacker-blog/fr/lifewave-patches-sante-articulaire-inflammation/">Patches LifeWave pour la Santé Articulaire et le Soulagement de l'Inflammation</a></h2>
+    <p>Découvrez comment les patches LifeWave IceWave et X39 peuvent soutenir la santé articulaire.</p>
+    <a href="/yourbiohacker-blog/fr/lifewave-patches-sante-articulaire-inflammation/" class="read-more">Lire la suite →</a>
+  </div>
 </div>
 
   </div>
